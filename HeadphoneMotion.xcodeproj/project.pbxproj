@@ -12,6 +12,8 @@
 		B31BD71B257A67F9002D34F7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD71A257A67F9002D34F7 /* GameViewController.swift */; };
 		B31BD71E257A67F9002D34F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31BD71C257A67F9002D34F7 /* Main.storyboard */; };
 		B31BD720257A67FB002D34F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31BD71F257A67FB002D34F7 /* Assets.xcassets */; };
+		B31BD731257A6D8D002D34F7 /* HeadphoneMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD730257A6D8D002D34F7 /* HeadphoneMotionManager.swift */; };
+		B31BD735257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD734257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B31BD71D257A67F9002D34F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B31BD71F257A67FB002D34F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31BD721257A67FB002D34F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31BD730257A6D8D002D34F7 /* HeadphoneMotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadphoneMotionManager.swift; sourceTree = "<group>"; };
+		B31BD734257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+SceneRendererDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				B31BD716257A67F9002D34F7 /* AppDelegate.swift */,
 				B31BD71A257A67F9002D34F7 /* GameViewController.swift */,
+				B31BD734257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift */,
+				B31BD730257A6D8D002D34F7 /* HeadphoneMotionManager.swift */,
 				B31BD728257A6A78002D34F7 /* Resources */,
 			);
 			path = HeadphoneMotion;
@@ -142,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31BD731257A6D8D002D34F7 /* HeadphoneMotionManager.swift in Sources */,
+				B31BD735257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift in Sources */,
 				B31BD71B257A67F9002D34F7 /* GameViewController.swift in Sources */,
 				B31BD717257A67F9002D34F7 /* AppDelegate.swift in Sources */,
 			);

@@ -9,13 +9,18 @@ import UIKit
 import QuartzCore
 import SceneKit
 
+
 class GameViewController: UIViewController {
+
+    // create a new scene
+    let scene = SCNScene(named: "art.scnassets/ship.scn")!
+    
+    lazy var shipNode = scene.rootNode.childNode(withName: "ship", recursively: true)!
+    
+    let motionManager = HeadphoneMotionManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -39,17 +44,14 @@ class GameViewController: UIViewController {
         ambientLightNode.light!.color = UIColor.darkGray
         scene.rootNode.addChildNode(ambientLightNode)
         
-        // retrieve the ship node
-        let ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
-        
-        // animate the 3d object
-        ship.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 1)))
-        
         // retrieve the SCNView
         let scnView = self.view as! SCNView
         
+        scnView.delegate = self
+        
         // set the scene to the view
         scnView.scene = scene
+        scnView.isPlaying = true
         
         // allows the user to manipulate the camera
         scnView.allowsCameraControl = true
