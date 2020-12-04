@@ -14,7 +14,7 @@ extension GameViewController: SCNSceneRendererDelegate {
                 
         guard let deviceMotion = motionManager.deviceMotion else { return }
         
-        let node = self.shipNode
+        let node = self.containerNode
         
         let attitude = deviceMotion.attitude
         
