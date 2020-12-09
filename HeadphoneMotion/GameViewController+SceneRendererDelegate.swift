@@ -12,9 +12,11 @@ extension GameViewController: SCNSceneRendererDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
                 
-        guard let deviceMotion = motionManager.deviceMotion else { return }
-        
-        let node = self.containerNode
+        guard let deviceMotion = motionManager.deviceMotion,
+              let node = self.activeNode else {
+            
+            return
+        }
         
         let attitude = deviceMotion.attitude
         

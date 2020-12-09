@@ -18,6 +18,8 @@ class GameViewController: UIViewController {
     lazy var shipNode = scene.rootNode.childNode(withName: "ship", recursively: true)!
     lazy var containerNode = scene.rootNode.childNode(withName: "container", recursively: true)!
     
+    var activeNode: SCNNode?
+
     let motionManager = HeadphoneMotionManager()
     
     /// Source for audio playback
@@ -27,12 +29,13 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         setupScene()
-        
-        setUpAudio()
-        playSound()
+        setupControl()
+        setupAudio()
     }
     
     func setupScene() {
+        
+        activeNode = shipNode
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
