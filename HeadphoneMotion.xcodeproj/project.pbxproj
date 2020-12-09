@@ -16,6 +16,7 @@
 		B31BD735257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD734257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift */; };
 		B31BD73A257A766D002D34F7 /* GameViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31BD739257A766D002D34F7 /* GameViewController+Audio.swift */; };
 		B31BD73E257A771C002D34F7 /* fireplace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B31BD73D257A771C002D34F7 /* fireplace.mp3 */; };
+		B31BD7482580ED7A002D34F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31BD7472580ED79002D34F7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B31BD734257A6EF2002D34F7 /* GameViewController+SceneRendererDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+SceneRendererDelegate.swift"; sourceTree = "<group>"; };
 		B31BD739257A766D002D34F7 /* GameViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+Audio.swift"; sourceTree = "<group>"; };
 		B31BD73D257A771C002D34F7 /* fireplace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fireplace.mp3; sourceTree = "<group>"; };
+		B31BD7472580ED79002D34F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				B31BD71F257A67FB002D34F7 /* Assets.xcassets */,
 				B31BD73D257A771C002D34F7 /* fireplace.mp3 */,
 				B31BD721257A67FB002D34F7 /* Info.plist */,
+				B31BD7472580ED79002D34F7 /* LaunchScreen.storyboard */,
 				B31BD71C257A67F9002D34F7 /* Main.storyboard */,
 			);
 			path = Resources;
@@ -144,6 +147,7 @@
 				B31BD719257A67F9002D34F7 /* art.scnassets in Resources */,
 				B31BD720257A67FB002D34F7 /* Assets.xcassets in Resources */,
 				B31BD73E257A771C002D34F7 /* fireplace.mp3 in Resources */,
+				B31BD7482580ED7A002D34F7 /* LaunchScreen.storyboard in Resources */,
 				B31BD71E257A67F9002D34F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
