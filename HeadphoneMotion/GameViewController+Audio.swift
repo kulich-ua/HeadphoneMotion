@@ -33,21 +33,8 @@ extension GameViewController {
         // Create a player from the source and add it to `objectNode`
         
         let audioPlayer = SCNAudioPlayer(source: audioSource)
-        audioPlayer.willStartPlayback = {
-            
-            print("willStartPlayback")
-        }
-        audioPlayer.didFinishPlayback = {
-            
-            print("didFinishPlayback")
-        }
+
         shipNode.addAudioPlayer(audioPlayer)
-        
-        guard let player = shipNode.audioPlayers.first else { return }
-        if let avNode = player.audioNode as? AVAudioMixing {
-            
-            avNode.volume = 1.0
-        }
     }
     
     func stopSound() {

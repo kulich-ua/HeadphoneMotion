@@ -16,9 +16,7 @@ class HeadphoneMotionManager: NSObject {
     
     override init() {
         super.init()
-        
-        motionManager.delegate = self
-        
+                
         setupMotion()
     }
     
@@ -26,19 +24,19 @@ class HeadphoneMotionManager: NSObject {
                         
         if motionManager.isDeviceMotionAvailable {
             
+            motionManager.delegate = self
+
             motionManager.startDeviceMotionUpdates()
-//            motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { [self] (motion, error) in
+            
+//            motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { (motion, error) in
 //
 //                if let error = error {
 //
 //                    print(error)
 //                }
-//                print(motion?.sensorLocation.rawValue)
+//                guard let deviceMotion = motion else { return }
 //                
-//                guard let deviceMotion = motionManager.deviceMotion else { return }
-//
-//                self.deviceMotions.append(deviceMotion)
-//                self.deviceMotions = Array(self.deviceMotions.suffix(smoothThresholdNumber))
+//                print(deviceMotion.sensorLocation.rawValue)
 //            }
         }
     }
@@ -50,6 +48,7 @@ extension HeadphoneMotionManager: CMHeadphoneMotionManagerDelegate {
         
         print("connect")
     }
+    
     func headphoneMotionManagerDidDisconnect(_ manager: CMHeadphoneMotionManager) {
         
         print("disconnect")

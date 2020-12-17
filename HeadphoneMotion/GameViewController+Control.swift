@@ -18,7 +18,7 @@ extension GameViewController {
                 self.activeNode = self.shipNode
                 self.stopSound()
             }),
-            UIAction(title: "Spatial audio",  handler: { action in
+            UIAction(title: "Positional audio",  handler: { action in
                 
                 self.activeNode?.eulerAngles = SCNVector3(x: 0, y: 0, z: 0)
                 self.activeNode = self.containerNode
